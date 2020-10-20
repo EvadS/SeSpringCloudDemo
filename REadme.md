@@ -1,5 +1,6 @@
-Spring cloud netlix stack 
+#Spring cloud netlix stack 
 
+## part 1 
  - Eureka Server
  - Eureka Client(User-Service, Gallery-Service)
 
