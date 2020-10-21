@@ -20,6 +20,13 @@ Reactive Streams(WebFlux)
 Тестируем:
 Запустите вначале Eureka Server. 
 
+###  Настройка уведомлений о статусе приложений (UP/ DOWN)
+Зайти в проект demo-admin-server 
+добавить файл mail.properties в /src/main/resources (для удобства можно переименовать mail.properties.demo )
+ и проставить свои логин / пароль от GOOGLE почты 
+
+
+
 
 Затем запустите 
 * gallery-service
