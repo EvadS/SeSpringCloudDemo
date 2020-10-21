@@ -1,0 +1,54 @@
+
+ application.properties
+
+spring.application.name = eureka-server
+server.port = 8761
+eureka.client.register-with-eureka = false
+eureka.client.fetch-registry = false
+
+eureka.client.serviceUrl.defaultZone:http://localhost:9091/eureka/
+---
+sample 2 
+application.yml and add the following:
+
+server.port: 9001
+spring.application.name: demo-discovery-server
+eureka:
+ server:
+ evictionIntervalTimerInMs: 3000
+ response-cache-update-interval-ms: 3000
+ client:
+ registerWithEureka: false
+ fetchRegistry: false
+ service-url.defaultZone: http://localhost:${server.port}/eureka
+------------
+
+
+Client 
+
+
+@EnableDiscoveryClient
+
+spring.application.name=eureka-client-service
+server.port=8081
+eureka.client.service-url.defaultZone=http://localhost:8761/eureka/
+------------
+sample 2 
+ below-
+
+YAML
+server.port: 9901
+spring:
+ application.name: book-service 
+eureka:
+ client:
+ serviceUrl:
+ defaultZone: http://localhost:9001/eureka/
+ #defaultZone: ${EUREKA_URI:http://localhost:9001/eureka}
+ registryFetchIntervalSeconds: 1
+ instance:
+ leaseRenewalIntervalInSeconds: 1
+----------------------------
+
+
+

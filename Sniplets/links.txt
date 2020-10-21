@@ -1,0 +1,8 @@
+
+
+How to Develop Microservices With Spring Cloud and Netflix Discovery
+https://dzone.com/articles/step-by-step-a-simple-spring-boot-microservices-ba
+-------------------------
+
+Quick Guide to Microservices With Spring Boot 2.0, Eureka, and Spring Cloud
+https://dzone.com/articles/quick-guide-to-microservices-with-spring-boot-20-e
