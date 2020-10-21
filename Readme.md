@@ -3,6 +3,8 @@
 ## Netflix OSS
 Used: Eureka, Config Server, Config Client, Zuul Api Gateway, Feign Client, RestTemplate, WebClient, Hystrix, Ribbon, Security (JWT) + MongoDB + Docker + Reactive (Spring WebFlux).
 
+## mvn
+
 ## part 1 
  - Eureka Server
  - Eureka Client(User-Service, Gallery-Service)
@@ -14,6 +16,9 @@ Reactive Streams(WebFlux)
 
 ## part 2
   - Zuul
+  - Auth service 
+  - Security service 
+  - Spring boot admin 
 
 
 ### Testing 
