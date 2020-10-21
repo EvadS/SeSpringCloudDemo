@@ -19,11 +19,27 @@ Reactive Streams(WebFlux)
 ### Testing 
 Тестируем:
 Запустите вначале Eureka Server. 
+
+
 Затем запустите 
 * gallery-service
+* admin-server
 * user-service
 * zuul-service
 * security-service.
+
+eureka-server 
+	mvn clean package && mvn spring-boot:run &
+admin-server
+	 mvn clean package && mvn spring-boot:run &  
+gallery-service
+        mvn clean package && mvn spring-boot:run & 
+security-service
+        mvn clean package && mvn spring-boot:run & 
+user-service
+	mvn clean package && mvn spring-boot:run &
+zuul-service
+	mvn clean package && mvn spring-boot:run &
 
 
 
@@ -44,3 +60,11 @@ localhost:8766/auth
 А теперь отправьте запрос на gallery-service через наш zuul-service 
 
 localhost:8766/gallery
+
+
+Errors :
+The Tomcat connector configured to listen on port 8761 failed to start
+
+Ubuntu
+lsof -i:8080
+kill -9 20712 
